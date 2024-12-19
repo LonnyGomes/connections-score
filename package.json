@@ -8,7 +8,9 @@
     "devStart": "nodemon index.js",
     "logs": "pm2 logs",
     "stop": "pm2 stop all",
-    "restart": "pm2 restart all"
+    "restart": "pm2 restart all",
+    "docker:build": "docker build -t connections-score .",
+    "docker:run": "docker run -p 8000:8000 connections-score"
   },
   "author": "",
   "license": "ISC",
